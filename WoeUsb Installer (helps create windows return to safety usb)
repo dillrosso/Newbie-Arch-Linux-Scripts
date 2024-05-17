@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Install dependencies
+sudo pacman -S p7zip python-pip python-wxpython
+
+# Install WoeUSB-ng
+sudo pip3 install WoeUSB-ng
+
+# Make the woeusbgui command executable
+sudo chmod +x /usr/local/bin/woeusbgui
+
+echo "WoeUSB-ng has been installed successfully!"
